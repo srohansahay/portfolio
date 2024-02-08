@@ -7,7 +7,8 @@ import { db } from '../../firebase';
 
 const Portfolio = () => { 
     const [letterClass, setLetterClass] = useState('text-animate');
-    const [portfolio, setPortfolio] = useState([]);
+    const [workEx, setWorkEx] = useState([]);
+    const [projects, setProjects] = useState([]);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -20,25 +21,28 @@ const Portfolio = () => {
     });
 
     useEffect(() => {
-        getPortfolio();
+        getWorkEx();
+        getProjects();
     }, []);
 
-    const getPortfolio = async () => {
-        const querySnapshot = await getDocs(collection(db, 'portfolio'));
-        setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
+    const getWorkEx = async () => {
+        const querySnapshot = await getDocs(collection(db, 'workEx'));
+        setWorkEx(querySnapshot.docs.map((doc) => doc.data()));
     }
 
-    const renderPortfolio = (portfolio) => {
+    const getProjects = async () => {
+        const querySnapshot = await getDocs(collection(db, 'projects'));
+        setProjects(querySnapshot.docs.map((doc) => doc.data()));
+    }
+
+    const renderWorkEx = (workEx) => {
         return (
             <div className="images-container">
                 {
-                    portfolio.map((port, idx) => {
+                    workEx.map((port, idx) => {
                         return (
                             <div className="image-box" key={idx}>
-                                <img 
-                                src={port.image}
-                                className="portfolio-image"
-                                alt="portfolio" />
+                               
                                 <div className="content">
                                     <p className="title">{port.name}</p>
                                     <h4 className="description">{port.description}</h4>
@@ -62,11 +66,19 @@ const Portfolio = () => {
                 <h1 className="page-title">
                     <AnimatedLetters
                         letterClass={letterClass}
-                        strArray={"Portfolio".split("")}
+                        strArray={"Work Experience".split("")}
                         idx={15}
                     />
                 </h1>
-                <div>{renderPortfolio(portfolio)}</div>
+                <div>{renderWorkEx(workEx)}</div>
+                <h1 className="page-title1">
+                    <AnimatedLetters
+                        letterClass={letterClass}
+                        strArray={"Projects".split("")}
+                        idx={15}
+                    />
+                </h1>
+                <div>{renderWorkEx(projects)}</div>
             </div>
             <Loader type="pacman" />
         </>

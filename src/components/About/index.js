@@ -37,18 +37,13 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a passionate full-stack web3 developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+          Dedicated software developer with a strong interest in blockchain technology and creating full-stack web applications. I'm quite self-assured, curious, and constantly trying to get better at solving problems one at a time.
           </p>
           <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+            My coding journey began in my first year of my college, BITS Goa, when I joined the <a href='https://fest.devsoc.club/'>DevSoc</a> as an App developer. I participated in hackathons, worked on multiple projects, and eventually rose to the position of core member there.  
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+          Later on, I developed my full-stack web programming skills because I was interested in learning more about web3 technologies. Building something is always enjoyable, whether it's a web application or experimenting with NFTs and smart contracts XD I have experience working on many projects for internships and businesses.Besides being a final-year BITS Goa Computer Science student right now, I also work on side projects and freelancing jobs.
           </p>
         </div>
 
