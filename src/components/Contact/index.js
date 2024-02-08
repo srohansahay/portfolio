@@ -20,7 +20,11 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm('service_jks0aug', 'template_cm7yuxo', form.current,'TJcHznmtLDgVthx1r'
+      .sendForm(
+        'service_jks0aug',
+        'template_cm7yuxo',
+        form.current,
+        'TJcHznmtLDgVthx1r'
       )
       .then(
         () => {

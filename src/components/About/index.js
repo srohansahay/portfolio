@@ -1,13 +1,9 @@
 import { useEffect, useState } from 'react'
 import {
-  faAngular,
   faAws,
-  faCss3,
   faDocker,
   faEthereum,
-  faGitAlt,
   faGithub,
-  faHtml5,
   faJsSquare,
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
@@ -37,13 +33,25 @@ const About = () => {
             />
           </h1>
           <p>
-          Dedicated software developer with a strong interest in blockchain technology and creating full-stack web applications. I'm quite self-assured, curious, and constantly trying to get better at solving problems one at a time.
+            Dedicated software developer with a strong interest in blockchain
+            technology and creating full-stack web applications. I'm quite
+            self-assured, curious, and constantly trying to get better at
+            solving problems one at a time.
           </p>
           <p align="LEFT">
-            My coding journey began in my first year of my college, BITS Goa, when I joined the <a href='https://fest.devsoc.club/'>DevSoc</a> as an App developer. I participated in hackathons, worked on multiple projects, and eventually rose to the position of core member there.  
+            My coding journey began in my first year of my college, BITS Goa,
+            when I joined the <a href="https://fest.devsoc.club/">DevSoc</a> as
+            an App developer. I participated in hackathons, worked on multiple
+            projects, and eventually rose to the position of core member there.
           </p>
           <p>
-          Later on, I developed my full-stack web programming skills because I was interested in learning more about web3 technologies. Building something is always enjoyable, whether it's a web application or experimenting with NFTs and smart contracts XD I have experience working on many projects for internships and businesses.Besides being a final-year BITS Goa Computer Science student right now, I also work on side projects and freelancing jobs.
+            Later on, I developed my full-stack web programming skills because I
+            was interested in learning more about web3 technologies. Building
+            something is always enjoyable, whether it's a web application or
+            experimenting with NFTs and smart contracts XD I have experience
+            working on many projects for internships and businesses.Besides
+            being a final-year BITS Goa Computer Science student right now, I
+            also work on side projects and freelancing jobs.
           </p>
         </div>
 
@@ -66,7 +74,7 @@ const About = () => {
             </div>
             <div className="face6">
               <FontAwesomeIcon icon={faDocker} color="#EC4D28" />
-            </div>                     
+            </div>
           </div>
         </div>
       </div>
